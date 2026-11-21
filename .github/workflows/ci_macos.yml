@@ -51,7 +51,6 @@ jobs:
         name: LLGL-macOS-${{ matrix.config }}-x86_64
         path: |
           ${{ env.README }}
-          ${{ github.workspace }}/macOS-x64/build/libLLGL*.dylib
-          ${{ github.workspace }}/macOS-x64/build/Example_*.app
-          ${{ github.workspace }}/macOS-x64/build/Testbed*.app
-      
+          ${{ github.workspace }}/macOS-x64/build/${{ matrix.config }}/libLLGL*.dylib
+          ${{ github.workspace }}/macOS-x64/build/${{ matrix.config }}/Example_*.app
+          ${{ github.workspace }}/macOS-x64/build/${{ matrix.config }}/Testbed*.app
