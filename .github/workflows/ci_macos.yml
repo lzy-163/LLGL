@@ -54,4 +54,4 @@ jobs:
           ${{ github.workspace }}/macOS-x64/build/libLLGL*.dylib
           ${{ github.workspace }}/macOS-x64/build/Example_*.app
           ${{ github.workspace }}/macOS-x64/build/Testbed*.app
-      
+        if-no-files-found: warn
