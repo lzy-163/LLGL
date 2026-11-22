@@ -54,8 +54,7 @@ jobs:
         name: LLGL-iOS-${{ matrix.config }}-arm64
         path: |
           ${{ env.README }}
-          ${{ github.workspace }}/iOS-arm64/build/libLLGL*.dylib
-          ${{ github.workspace }}/iOS-arm64/build/libLLGL*.dylib.dSYM
-          ${{ github.workspace }}/iOS-arm64/build/Example_*.app
-          ${{ github.workspace }}/iOS-arm64/build/Example_*.app.dSYM
-      
+          ${{ github.workspace }}/iOS-arm64/libLLGL*.dylib
+          ${{ github.workspace }}/iOS-arm64/libLLGL*.dylib.dSYM
+          ${{ github.workspace }}/iOS-arm64/Example_*.app
+          ${{ github.workspace }}/iOS-arm64/Example_*.app.dSYM
